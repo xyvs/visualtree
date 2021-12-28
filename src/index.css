@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.node-list > .node {
+    @apply ml-5;
+}
+
+::-webkit-scrollbar {
+  @apply bg-transparent w-2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-700 rounded;
+}
+
