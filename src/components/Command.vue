@@ -25,7 +25,7 @@ const copyCommmandToClipboard = () => {
                 :description="argument.description"
             />
         </div>
-        <div class="absolute right-0 bottom-0 top-0 flex items-center justify-center">
+        <div class="absolute right-0 bottom-0 top-0 flex items-center justify-center hidden">
             <div @click="copyCommmandToClipboard"
                 class="bg-blue-800/10 hover:bg-blue-800/20 rounded border border-blue-900/20 my-1 mr-2 py-1 px-2 text-xs cursor-pointer select-none">
                 Copy
