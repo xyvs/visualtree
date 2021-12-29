@@ -18,19 +18,19 @@ const props = defineProps({
 
 <template>
     <div class="space-y-3 node">
-        <div class="bg-gray-800 flex items-center justify-between px-3 py-3 rounded gap-2">
-            <div class="flex items-center gap-2">
+        <div class="bg-gray-200 dark:bg-gray-800 flex items-center justify-between pl-3 pr-5 py-3 rounded gap-2 overflow-x-auto text-gray-800 dark:text-white">
+            <div class="flex items-center gap-3">
                 <NodeIcon :name="node.name" :type="node.type" :open="open" />
-                <div class="text-xs select-none">
+                <div class="text-xs select-none whitespace-nowrap">
                     {{ node.name }}
                 </div>
                 <NodeInfo :node="node" />
             </div>
             <div v-if="node.type === 'directory' && node.contents.length" @click="toggleOpen">
-                <div v-if="!open" class="text-xs bg-gray-900 rounded flex items-center justify-center cursor-pointer px-2 py-1">
+                <div v-if="!open" class="text-xs bg-gray-400 dark:bg-gray-900 rounded flex items-center justify-center cursor-pointer px-2 py-1 text-white">
                     Open
                 </div>
-                <div v-else class="text-xs bg-red-900 rounded flex items-center justify-center cursor-pointer px-2 py-1">
+                <div v-else class="text-xs bg-red-400 dark:bg-red-900 rounded flex items-center justify-center cursor-pointer px-2 py-1 text-white">
                     Close
                 </div>
             </div>

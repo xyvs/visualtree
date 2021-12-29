@@ -12,13 +12,13 @@ const props = defineProps({
         <div class="w-full space-y-4">
             <div v-if="fileInfo" class="text-center">
                 <div class="flex items-center justify-center gap-4 text-sm">
-                    <div class="flex items-center gap-2 bg-gray-900 px-4 py-2 rounded cursor-pointer"
+                    <div class="flex items-center gap-2 bg-white dark:bg-gray-900 px-4 py-2 rounded cursor-pointer"
                         @click="$emit('upload-another')">
-                        <div class="text-gray-200" >
+                        <div class="text-gray-800 dark:text-gray-200 font-medium" >
                             Upload another file
                         </div>
                     </div>
-                    <div class="flex items-center gap-2 bg-gray-900 px-4 py-2 rounded">
+                    <div class="flex items-center gap-2 bg-white dark:bg-gray-900 px-4 py-2 rounded">
                         <div class="font-medium text-gray-500">
                             Number of directories: 
                         </div>
@@ -26,7 +26,7 @@ const props = defineProps({
                             {{ fileInfo.directories }}
                         </span>
                     </div>
-                    <div class="flex items-center gap-2 bg-gray-900 px-4 py-2 rounded">
+                    <div class="flex items-center gap-2 bg-white dark:bg-gray-900 px-4 py-2 rounded">
                         <div class="font-medium text-gray-500">
                             Number of files: 
                         </div>
@@ -36,7 +36,7 @@ const props = defineProps({
                     </div>
                 </div>
             </div>
-            <div v-if="fileData" class="bg-gray-900 p-10 rounded-lg text-center">
+            <div v-if="fileData" class="bg-white dark:bg-gray-900 p-10 rounded-lg text-center">
                 <Node :node="fileData" />
             </div>
         </div>
