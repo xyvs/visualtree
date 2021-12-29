@@ -10,7 +10,7 @@
   <p align="center">
     A tool that allows you to visualize and interact with the output of your tree command.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://visualtree.xyvs.io">View Demo</a>
   </p>
 
 </div>
