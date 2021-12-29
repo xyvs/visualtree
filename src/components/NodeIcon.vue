@@ -3,10 +3,10 @@ import { computed } from 'vue';
 
 import Constants from '../../constants/Constants.js';
 
-import FolderOpen from '../assets/icons/folder-open.png'
-import FolderClosed from '../assets/icons/folder-closed.png'
+import FolderOpen from '../assets/icons/FolderOpen.png'
+import FolderClosed from '../assets/icons/FolderClosed.png'
 
-import File from '../assets/icons/file.png'
+import File from '../assets/icons/File.png'
 import Archive from '../assets/icons/Archive.png'
 import Audio from '../assets/icons/Audio.png'
 import Database from '../assets/icons/Database.png'
