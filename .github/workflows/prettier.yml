@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: "16"
       - name: Prettier
-        run: npx prettier --write **/*.tsx
+        run: npx prettier --write **/*.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
